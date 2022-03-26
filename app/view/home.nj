@@ -1,7 +1,8 @@
 <html>
   <head>
-    <title>Hacker News</title>
-    <link rel="stylesheet" href="/public/css/news.css" />
+    <title>大喷菇-文件服务器</title>
+    <link rel="icon" href="../public/mogu.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../public/mogu.ico" type="image/x-icon" />
   </head>
   <body>
     <ul class="news-view view">
