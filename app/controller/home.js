@@ -1,18 +1,12 @@
 'use strict';
 
 const Controller = require('egg').Controller;
-const fs = require('mz/fs');
-const path = require('path');
+const { readPublic } = require('../util');
 class HomeController extends Controller {
   async index() {
     const ctx = this.ctx;
     const app = this.app;
-    const dir = path.resolve(__dirname, '../public/');
-    const fileList = await fs.readdir(dir);
-    const list = fileList.map(item => ({
-      url: `${app.config.url}${item}`,
-      title: item,
-    }));
+    const list = await readPublic(app);
     await ctx.render('home.nj', { list }, {
       path: '***',
     });
