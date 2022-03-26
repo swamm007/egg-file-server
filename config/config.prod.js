@@ -4,6 +4,6 @@
 
 module.exports = () => {
   return {
-    url: 'http://wdewu.com/public/',
+    url: 'http://wdewu.com:7001/public/',
   };
 };

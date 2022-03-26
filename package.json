@@ -24,7 +24,7 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-fileServer",
+    "start": "egg-scripts start --port=7001 --daemon --title=egg-server-fileServer",
     "stop": "egg-scripts stop --title=egg-server-fileServer",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
